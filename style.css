@@ -16,7 +16,7 @@ h1{
 	text-align:  center;
 }
 
-.try{
+.Garfield{
 	font-family: Lobster;
 	color:white;
 	text-align:  center;
@@ -30,12 +30,43 @@ marquee{
 
 .little-cat{
 	border-radius: 15px;
-	margin-left: 170px;
+	margin-left: 220px;
 	margin-right: 30px;
+}
+
+.lazy-cat{
+	border-radius: 15px;
+	margin-left: 190px;
+	margin-right: 20px;
+}
+
+.cat{
+	border-radius: 15px;
+	margin-right: 20px;
 }
 
 .introduce{
 	font-family: 標楷體;
 	font-size: 24px;
 	color:white;
+	text-shadow:4px 4px 4px black;
+}
+
+img{
+	box-shadow:3px 4px 12px black;
+}
+
+.pen{
+	margin-left: 53%;
+	font-family: 標楷體;	
+	font-size: 24px;
+	color:white;
+	text-shadow:5px 5px 6px black;
+}
+
+.album{
+	font-family: 標楷體;
+	color:white;
+	text-align:  center;
+	font-size: 18px;
 }
