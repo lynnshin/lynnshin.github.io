@@ -3,27 +3,140 @@
 	<head>
 		<title>My Website</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="favicon-mywebsite.ico">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">		
+		<script src="jquery-3.2.1.js"></script>
 	</head>
+	<style type="text/css">
+		html {
+        	height: 100%;
+		}
+
+		body {
+		    background-image: url(night.jpg);
+		    background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-size: cover;
+		}
+
+		h1{
+			font-family: Lobster;
+			color:white;
+			text-align:  center;
+		}
+
+		.Garfield{
+			font-family: Lobster;
+			color:white;
+			text-align:  center;
+		}
+
+		marquee{
+			font-size: 40px;
+			font-family: Lobster;
+			color:white;
+		}
+
+		.little-cat{
+			border-radius: 15px;
+			margin-left: 17%;
+			margin-right: 1%;
+		}
+
+		.lazy-cat{
+			border-radius: 15px;
+			margin-left: 15%;
+			margin-right: 1%;
+		}
+
+		.cat{
+			border-radius: 15px;
+			margin-right: 1%;
+		}
+
+		.introduce{
+			font-family: 標楷體;
+			font-size: 24px;
+			color:white;
+			text-shadow:4px 4px 4px black;
+		}
+
+		img{
+			box-shadow:3px 4px 12px black;
+		}
+
+		.pen{
+			margin-left: 53%;
+			font-family: 標楷體;	
+			font-size: 24px;
+			color:white;
+			text-shadow:5px 5px 6px black;
+		}
+
+		.album{
+			font-family: 標楷體;
+			color:white;
+			text-align:  center;
+			font-size: 18px;
+		}
+
+		.insta{
+			position:fixed;
+			box-shadow:0px 0px 0px black;
+			right: 1%;
+			bottom: 1%;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".Garfield").hide();
+            $(".little-cat").hide();
+            $(".introduce").hide();
+            $(".pen").hide();
+            $(".album").hide();
+            $(".lazy-cat").hide();
+		    $(".cat").hide();
+			$("#intro").click(function () {
+                $(".Garfield").slideToggle("slow");
+                $(".little-cat").slideToggle("slow");
+                $(".introduce").slideToggle("slow");
+                $(".pen").slideToggle("slow");
+            });
+            $("#alb").click(function () {
+            	$(".album").slideToggle("slow");
+                $(".lazy-cat").slideToggle("slow");
+                $(".cat").slideToggle("slow");
+            });
+		    $("#intro").addClass("animated jello");
+		    $(".Garfield").addClass("animated jello");
+		    $(".little-cat").addClass("animated swing");
+		    $(".introduce").addClass("animated fadeIn");
+		    $(".pen").addClass("animated fadeIn");
+		    $("#alb").addClass("animated jello");
+		    $(".lazy-cat").addClass("animated fadeIn");
+		    $(".cat").addClass("animated fadeIn");
+		     
+ 		 });
+	</script>
 
 	<body>
 		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" width=100% direction="right" scrolldelay="2" scrollamount="7">Welcome to My Website</marquee>
-		<h1 class="animated jello">Introduce</h1>
-		<p class="Garfield animated jello">I'm an orange Garfield. I'm a lovable cat.</p>
+		<h1 id="intro">Introduce</h1>
+		<p class="Garfield">I'm an orange Garfield. I'm a lovable cat.</p>
 
-		<img class="little-cat animated swing" src="mycat.JPG" title="我是小虎" alt="我家小虎" width="300" height="350" align="left">
-		<p class="introduce animated fadeIn"><br>我叫小虎<br>今年五歲<br>我覺得自己是隻高傲的貓<br>就像照片裡的一樣<br>可是有時候我很調皮<br>會在主人的床上尿尿<br>即使如此他們還是很愛我<br>我真不愧是一隻集萬眾寵愛於一身的貓<br></p>
-		<p class="pen animated fadeIn">-From 小虎-<br></p>
+		<img class="little-cat" src="mycat.JPG" title="我是小虎" alt="我家小虎" width="300" height="350" align="left">
+		<p class="introduce"><br>我叫小虎<br>今年五歲<br>我覺得自己是隻高傲的貓<br>就像照片裡的一樣<br>可是有時候我很調皮<br>會在主人的床上尿尿<br>即使如此他們還是很愛我<br>我真不愧是一隻集萬眾寵愛於一身的貓<br></p>
+		<p class="pen">-From 小虎-<br></p>
 		<p><br></p>
 		
-		<h1 class="animated jello">Albums</h1>
+		<h1 id="alb">Albums</h1>
 		<p class="album">我最愛的事就是睡覺</p>
-		<img class="lazy-cat animated fadeIn" src="lazycat.jpg" title="除了睡" alt="人性化小虎" width="300" height="533" align="left">
-		<img class="cat animated fadeIn" src="cat.jpg" title="睡" alt="人性化小虎" width="300" height="533" align="left">
-		<img class="cat animated fadeIn" src="ccat.jpg" title="還是睡" alt="人性化小虎" width="300" height="533" align="left">
+		<img class="lazy-cat" src="lazycat.jpg" title="除了睡" alt="人性化小虎" width="300" height="533" align="left">
+		<img class="cat" src="cat.jpg" title="睡" alt="人性化小虎" width="300" height="533" align="left">
+		<img class="cat" src="ccat.jpg" title="還是睡" alt="人性化小虎" width="300" height="533" align="left">
 		<a href="https://www.instagram.com/lynneemao/" title="Instagram"><img class="insta" src="insta.png" width="80" height="80"></a>
 
 	</body>
