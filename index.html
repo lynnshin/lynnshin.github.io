@@ -188,8 +188,11 @@
 	    });
 	  }
 	</script>
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" style="float:right;">
-		</fb:login-button>
+		<div style="float:right;">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" style="float:right;">
+			</fb:login-button>
+		</div>
+		
 		<div id="status">
 		</div>
 		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" width=100% direction="right" scrolldelay="2" scrollamount="7">Welcome to My Website</marquee>		
