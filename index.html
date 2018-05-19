@@ -181,6 +181,10 @@
 	</script>
 		
 		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" width=100% direction="right" scrolldelay="2" scrollamount="7">Welcome to My Website</marquee>
+		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button>
+		<div id="status" style="float:right;">
+		</div>
 		<h1 id="intro">Introduce</h1>
 		<p class="Garfield">I'm an orange Garfield. I'm a lovable cat.</p>
 
@@ -195,10 +199,6 @@
 		<img class="cat" src="cat.jpg" title="睡" alt="人性化小虎" width="300" height="533" align="left">
 		<img class="cat" src="ccat.jpg" title="還是睡" alt="人性化小虎" width="300" height="533" align="left">
 		<a href="https://www.instagram.com/lynneemao/" title="Instagram"><img class="insta" src="insta.png" width="80" height="80"></a>
-		<p><br></p>
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" style="margin:auto;">
-		</fb:login-button>
-		<div id="status">
-		</div>
+		
 	</body>
 </html>
